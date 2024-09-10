@@ -12,11 +12,13 @@ let d2 = 50;      // diameter of the ball
 
 function setup() {
   createCanvas(400, 400);
+  textSize(60);
+  fill(255);
 }
 
 function draw() {
   background(51); // try commenting this out!
- 
+
   // if x hits the right side or the left side of the canvas,
   // switch directions...
   if (x1 > width || x1 < 0) {
@@ -46,4 +48,9 @@ function draw() {
 
   fill(3, 252, 215)
   ellipse(x2, y2, d2);
+
+  fill (255, 255, 255)
+ellipse(mouseX, mouseY, 33, 33);
+
+text(key, 20, 75); // Draw at coordinate (20,75)
 }
